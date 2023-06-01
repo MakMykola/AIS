@@ -1,0 +1,32 @@
+{% extends 'lib/base.html' %}
+  {% block content%}
+{% for b in lib %}
+<!--suppress ALL -->
+<div class="post-b">
+    <ul>
+    <li><a href="{{ b.get_absolute_url}}"><!--suppress HtmlUnknownTarget -->
+        <img src="{{b.photo.url}}" alt=""></a></li>
+        <li class="t-b"><a href="{{ b.get_absolute_url}}">{{ b.title }}</a></li>
+    </ul></div>
+{% endfor %}
+        {% if page_obj.has_other_pages %}
+<div class="paginate">
+    <div class="nav-link">
+        {% for p in page_obj.paginator.page_range %}
+        {% if page_obj.number == p %}
+        <span class="p_n_c">[{{ p }}]</span>
+        {% else %}
+        <a href="?page={{ p }}" class="p-n">[{{ p }}]</a>
+        {% endif %}
+        {% endfor %}
+    </div></div>
+{% endif %}
+{% endblock %}
+{% block catalog %}
+{% for c in view.get_category %}
+    <div class="c-n-bd">
+        <a href="{{ c.get_absolute_url }}">| {{ c.title }} |</a>
+    </div>
+    {% endfor %}
+
+{% endblock %}

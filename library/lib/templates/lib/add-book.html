@@ -1,0 +1,13 @@
+{% extends 'lib/base.html' %}
+
+  {% block content %}
+<form action="{% url 'addbook' %}" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {% for f in form %}
+  <p class="b-input"><labe class="form-label" for="{{ f.id_for_label }}"> {{ f.label }}</labe>{{ f }}</p>
+  <div class="form-error">{{ f.errors }}</div>
+  {% endfor %}
+  <div class="button-add">
+    <button type="submit" class="add-b-bu">Зберегти</button></div>
+</form>
+  {% endblock %}ё

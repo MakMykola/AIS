@@ -1,0 +1,333 @@
+
+.back-p{
+    position: fixed;
+    width: 100%;
+
+}
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid black;
+    text-align: right;
+    color: black;
+    z-index: 0;
+    background-color: snow;
+
+
+}
+.header a{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: black;
+    text-decoration: none;
+    font-family: "Blackadder ITC", serif;
+    font-size: 19px;
+    top: -10px;
+    padding-right: 80px;
+
+}
+.header a:hover{
+    color: deepskyblue;
+}
+.header a.find{
+    position: relative;
+    top: 0;
+}
+.header a.add{
+    position: relative;
+    top: 0;
+}
+.add:hover{
+    color: deepskyblue;
+}
+.f-b{
+    position: relative;
+    padding-left: 70px;
+    padding-top: 70px;
+}
+.bi-filter{
+    position: relative;
+    fill: black;
+    left: 90%;
+    top: 80px;
+}
+.bi-person :hover{
+    fill: deepskyblue;
+}
+.bi-filter :hover{
+    fill: deepskyblue;
+}
+.content-text{
+    position: relative;
+    top: 50px;
+    max-width: 850px;
+    display: flex;
+    padding-top: 60px;
+    left: 25%;
+    flex-wrap: wrap;
+    background-color: snow;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border: 1px solid black;
+    }
+.nav-link {
+    position: relative;
+    text-align: center;
+    bottom: 100%;
+    color: black;
+    font-size: 20px;
+
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+
+}
+.nav-link a:hover{
+    color: deepskyblue;
+}
+.paginate{
+    position: relative;
+    width: 100%;
+}
+.post-b img{
+    position: relative;
+    top: 5px;
+    width: 190px;
+    height: 270px;
+
+
+}
+.post-b:hover{
+    border: 1px solid black;
+    position: relative;
+    max-width: 260px;
+    height: 350px;
+    padding-left: 20px;
+
+
+}
+.post-b{
+    display: flex;
+    padding-right: 80px;
+    padding-left: 20px;
+    max-width: 260px;
+    height: 100%;
+    width: 180px;
+
+
+
+}
+.post-b ul{
+    list-style-type: none;
+    top: 20px;
+    padding-right: 80px;
+    padding-bottom: 50px;
+
+
+
+
+}
+.post-b ul li{
+    max-width: 190px;
+
+
+}
+.t-b{
+    position: relative;
+    width: 190px;
+    text-align: center;
+    padding-top: 10px;
+}
+.t-b a{
+    text-decoration: none;
+    color: black;
+    font-family: "Blackadder ITC", serif
+
+}
+.t-b a:hover{
+    color: deepskyblue;
+}
+.b-u a{
+    position: fixed;
+    fill: black;
+    left: 90%;
+    bottom: 10px;
+}
+.b-u a:hover{
+    fill: deepskyblue;
+}
+
+.p-a-p{
+    position: relative;
+    width: 280px;
+    padding-left: 20%;
+
+
+}
+.pi_all{
+    display: flex;
+    flex-wrap: wrap;
+}
+.find a{
+    position: relative;
+}
+.pi_all ul{
+    position: relative;
+    left: 0;
+    top: 10%;
+}
+.t-d li {
+    position: relative;
+    font-family: "Blackadder ITC", serif;
+    font-size: 20px;
+    color: black;
+    list-style-type: none;
+    padding-bottom: 40px;
+    padding-left: 60px;
+}
+.c-t p{
+    text-align: left;
+    position: relative;
+    width: 90%;
+    left: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-family: "Blackadder ITC", serif;
+    font-size: 18px;
+}
+
+.s-n{
+    font-size: 16px;
+    font-family: Tahoma, Serif;
+
+
+}
+.category,.findd{
+        position: fixed;
+        left:  -200%;
+
+        overflow: auto;
+        right: 1%;
+        width: 45%;
+        background-color: snow;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+
+
+    z-index: 90;
+    }
+.category.active{
+    top: 60px;
+    left: 40%;
+}
+.category.active a:hover{
+    color: deepskyblue;
+}
+
+
+.findd.active{
+    top: 60px;
+    width: 90%;
+    height: 60px;
+    left: 5%;
+
+
+
+}
+.sort-t{
+    position: relative;
+    left: 25%;
+    background-color: snow;
+    height: 40px;
+    top: 50px;
+    max-width: 850px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+
+
+}
+
+
+
+.category a{
+    text-decoration: none;
+    color: black;
+    font-family: "Blackadder ITC", serif;
+    font-size: 20px;
+
+}
+category a:hover{
+    color: deepskyblue;
+}
+.category{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+}
+.category div{
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.f-find{
+    position: fixed;
+    width: 90%;
+    height: 60px;
+}
+.f-find button{
+    position: relative;
+    width: 10%;
+    height: 40px;
+    left: 5%;
+    top: 10px;
+    border: 1px solid black;
+}
+.e-find{
+    position: relative;
+    width: 80%;
+    height: 40px;
+    top: 10px;
+    left: 5%;
+
+}
+button{
+    background-color: snow;
+}
+
+button:hover{
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+}
+.form-label{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    min-width: 120px;
+    width: 120px;
+    vertical-align: top;
+    position: relative;
+    left: 40px;
+    font-size: 18px;
+
+
+
+}
+.form-error ul {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+    position: relative;
+    left: 80px;
+}
+.button-add{
+    position: relative;
+    right: 0;
+    padding-bottom: 40px;
+    padding-left: 90%;
+}
+

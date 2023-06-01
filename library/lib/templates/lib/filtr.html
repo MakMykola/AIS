@@ -1,0 +1,17 @@
+{% extends 'lib/base.html' %}
+
+  {% block content%}
+  {% for c in view.get_category %}
+{% for b in lib %}
+
+<div class="post-b">
+    <ul>
+    <li><a href="{{ b.get_absolute_url}}"><img src="{{b.photo.url}}" alt=""></a></li>
+        <li class="t-b"><a href="{{ b.get_absolute_url}}">{{ b.title }}</a></li>
+
+    </ul>
+</div>
+    {% endif %}
+{% endfor %}
+{% endfor %}
+  {% endblock %}

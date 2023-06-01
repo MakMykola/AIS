@@ -1,0 +1,21 @@
+{% extends 'lib/base.html' %}
+{% block title %}{{ lib.title }}{% endblock %}
+  {% block content%}
+<!--suppress ALL -->
+<div class="pi_all">
+  <div class="im">
+  <img src="{{ lib.photo.url }}" alt="" class="p-a-p">
+  </div>
+  <div class="an">
+    <ul class="t-d">
+      <li>Назва:  {{ lib.title }}</li>
+      <li>Автор:  {{ lib.author }}</li>
+      <li>Жанр:  {{ lib.Genre }}</li>
+      <li>{{ lib.availability}}<span class="s-n"> : {{ lib.number }}</span></li>
+    </ul>
+  </div>
+</div>
+<div class="c-t">
+  <p>{{ lib.content }}</p>
+</div>
+  {% endblock%}
